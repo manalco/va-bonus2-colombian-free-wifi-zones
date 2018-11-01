@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Bonus 2 | Visual Analytics</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- D3 -->
+  <!--script src="https://d3js.org/d3.v4.min.js"></script-->
+  <script type="text/javascript" src="libraries/d3/d3.min.js"></script>
+
+  <!-- Internal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/img/flower.jpg">
+            <span class="card-title">title</span>
+          </div>
+          <div class="card-content">
+            <p>desc</p>
+          </div>
+          <div class="card-action"><a href="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Zonas-WiFi-Gratis-Para-la-Gente-DPTIC-Nacional/az23-fuws" target="_blank" class="btn">Data Source</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card yellow lighten-4">
+          <div class="card-content">
+            <p><span class="badge"><i class="material-icons left">filter_list</i></span>
+              Hover your mouse over the department names to get more information. Click on them to zoom in and click on the center to zoom out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><span class="badge"><i class="material-icons left">insert_chart</i></span> graph title</span>
+            <div id="chart1" class="progress"><div class="indeterminate"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="container">
+    <div class="row">
+      <h2 class="section-title">About the vis</h2>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image red darken-3 noimage">
+            <span class="card-title">What</span>
+          </div>
+          <div class="card-content">
+            <p>Dataset Type: --.</p>
+            <p>Items(Nodes): Places</p>
+            <p>Link: Place → Place</p>
+            <p>Attributes: 
+              <ol>
+                <li>Quantity of Wifi zones (Ordered, Quantitative, Sequential)</li>
+              </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image yellow darken-3 noimage">
+            <span class="card-title">Why</span>
+          </div>
+          <div class="card-content">
+            <ul class="browser-default">
+              <li>---. <b>(--- - ---)</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image green darken-1 noimage">
+            <span class="card-title">How</span>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Encode:
+                  <ul class="browser-default">
+                    <li>[Nodes] Separate, Order.</li>
+                  </ul>
+                </li>
+                <li>Mark: Area</li>
+                <li>Channels:
+                  <ul class="browser-default">
+                    <li>[Department] Color (Hue)</li>
+                  </ul></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Insights</span>
+            <ul class="browser-default">
+              <li>---.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Used Technologies</span>
+            <ul class="browser-default">
+              <li>D3: <a href="https://d3js.org" target="_blank">https://d3js.org</a></li>
+              <li>Materialize: <a href="https://materializecss.com" target="_blank">https://materializecss.com</a></li>
+              <li>PHP (To preprocess data).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Visual Analytics</h5>
+          <p class="grey-text text-lighten-2">This visualization was developed for the <a href="http://johnguerra.co/classes/visual_analytics_fall_2018/" target="_blank">Visual Analytics</a> class (2018-20) at <a href="https://uniandes.edu.co/" target="_blank">Universidad de los Andes</a>.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Related Content</h5>
+          <ul>
+            <li><a href="https://github.com/cubosensei/va-bonus2-colombian-free-wifi-zones" target="_blank">Source Code</a></li>
+            <li><a href="#!" target="_blank">Slides</a></li>
+            <li><a href="#!" target="_blank">Youtube Video</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+      2018 MIT Licenced Content by <a href="http://www.manalco.co" target="_blank">Manuel Alvarado</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
