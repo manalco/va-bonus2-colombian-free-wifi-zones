@@ -5,7 +5,7 @@
   $ope = array();
   $departamento = "";
   $municipio = "";
-  if (($handle = fopen("assets/data/Zonas_WiFi_Gratis_Para_la_Gente_-_DPTIC_-_Nacional.csv", "r")) !== FALSE) {
+  if (($handle = fopen("assets/data/Zonas_WiFi_Gratis_Para_la_Gente_-_DPTIC_-_Nacional-sorted.csv", "r")) !== FALSE) {
     $header = array();
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
       if(empty($header)){
