@@ -1,7 +1,7 @@
 //D3
 var rawData, radius, height, width;
 const formatNumber = d3.format(",d");
-width = d3.select("#chart1").node().getBoundingClientRect().width-10;
+width = d3.select("#chart1").node().getBoundingClientRect().width;
 radius = width / 6;
 height = width;
 
@@ -90,9 +90,6 @@ function drawGraphic(){
 
     const t = g.transition().duration(750);
 
-    // Transition the data on all arcs, even the ones that aren’t visible,
-    // so that if this transition is interrupted, entering arcs will start
-    // the next transition from the desired position.
     path.transition(t)
         .tween("data", d => {
           const i = d3.interpolate(d.current, d.target);
@@ -136,7 +133,7 @@ function partition(data){
 }
 
 window.onresize = function(event) {
-  width = d3.select("#chart1").node().getBoundingClientRect().width-10;
+  width = d3.select("#chart1").node().getBoundingClientRect().width;
   radius = width / 6;
   height = width;
   drawGraphic();

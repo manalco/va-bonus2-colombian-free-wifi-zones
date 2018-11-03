@@ -34,18 +34,18 @@
         if(!in_array($d['MUNICIPIO'], $cit)){
           $cit[] = $d['MUNICIPIO'];
         }
-        if(!in_array($d['OPERADOR'], $ope)){
-          $ope[] = $d['OPERADOR'];
+        if(!in_array($d['NOMBRE ZONA WIFI'], $ope)){
+          $ope[] = $d['NOMBRE ZONA WIFI'];
         }
 
         $dep_key = array_search($d['DEPARTAMENTO'], $dep);
         $cit_key = array_search($d['MUNICIPIO'], $cit);
-        $ope_key = array_search($d['OPERADOR'], $ope);
+        $ope_key = array_search($d['NOMBRE ZONA WIFI'], $ope);
 
         $output['children'][$dep_key]['name'] = $d['DEPARTAMENTO'];
         $output['children'][$dep_key]['children'][$cit_key]['name'] = $d['MUNICIPIO'];
         //$output['children'][$dep_key]['children'][$cit_key]['size'] = isset($output['children'][$dep_key]['children'][$cit_key]['size'])? $output['children'][$dep_key]['children'][$cit_key]['size'] + 1 : 1;
-        $output['children'][$dep_key]['children'][$cit_key]['children'][$ope_key]['name'] = $d['OPERADOR'];
+        $output['children'][$dep_key]['children'][$cit_key]['children'][$ope_key]['name'] = $d['NOMBRE ZONA WIFI'];
         $output['children'][$dep_key]['children'][$cit_key]['children'][$ope_key]['size'] = isset($output['children'][$dep_key]['children'][$cit_key]['children'][$ope_key]['size'])? $output['children'][$dep_key]['children'][$cit_key]['children'][$ope_key]['size'] + 1 : 1;
       }
     }
