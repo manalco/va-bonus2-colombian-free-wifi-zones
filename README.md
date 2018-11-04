@@ -52,7 +52,7 @@ Attributes:
 
 # Related Content
 * [Visualization](https://cubosensei.github.io/va-bonus2-colombian-free-wifi-zones/)
-* [Slides](#!)
+* [Slides](https://docs.google.com/presentation/d/1IByZ472Eazbb7p59ybnMrO3v5Z7aML3yzuSM9YT4p_E/edit?usp=sharing)
 * [YouTube Video](#!)
 
 
