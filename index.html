@@ -65,19 +65,19 @@
   
   <div class="container">
     <div class="row">
-      <h2 class="section-title">About the vis</h2>
+      <h2 class="section-title">About the viz</h2>
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image red darken-3 noimage">
             <span class="card-title">What</span>
           </div>
           <div class="card-content">
-            <p>Dataset Type: --.</p>
+            <p>Dataset Type: Tree.</p>
             <p>Items(Nodes): Places</p>
             <p>Link: Place → Place</p>
             <p>Attributes: 
               <ol>
-                <li>Quantity of Wifi zones (Ordered, Quantitative, Sequential)</li>
+                <li>Number of Wifi zones (Ordered, Quantitative, Sequential)</li>
               </ol>
             </p>
           </div>
@@ -90,7 +90,9 @@
           </div>
           <div class="card-content">
             <ul class="browser-default">
-              <li>---. <b>(--- - ---)</b></li>
+              <li>Summarize the distribution of the free wifi zones in the Colombian departments. <b>(Summarize - Distribution)</b></li>
+              <li>Identify the places with the higher number of free wifi zones. <b>(Identify - Outliers)</b></li>
+              <li>Explore trough the places to identify the number of free wifi zones by place. <b>(Explore - Features)</b></li>
             </ul>
           </div>
         </div>
@@ -105,13 +107,15 @@
               <ul>
                 <li>Encode:
                   <ul class="browser-default">
-                    <li>[Nodes] Separate, Order.</li>
+                    <li>[Nodes] Separate, Order, align.</li>
                   </ul>
                 </li>
+                <li>Reduce: Filter.</li>
                 <li>Mark: Area</li>
                 <li>Channels:
                   <ul class="browser-default">
                     <li>[Department] Color (Hue)</li>
+                    <li>[Municipality and Wifi Zone] Color (Saturation)</li>
                   </ul></li>
               </ul>
             </p>
@@ -126,7 +130,9 @@
           <div class="card-content">
             <span class="card-title">Insights</span>
             <ul class="browser-default">
-              <li>---.</li>
+              <li>Antioquia is the department with the higher distribution of wifi zones throughout its municipalities.</li>
+              <li>Most of Bogotá's wifi zones are placed in Transmilenio's stations.</li>
+              <li>Pereira (Risaralda), Barranquilla (Atlántico) and Valledupar (Cesar) are the municipalities with the higher number of free wifi zones; 105, 104 and 62 respectively.</li>
             </ul>
           </div>
         </div>
