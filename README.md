@@ -1,9 +1,9 @@
 # How are distributed the government's free wifi zones in Colombia?
 ## A visualization about colombian Ministry of Information Technologies and Communications free wifi zones
 
-Colombian Ministry of Information Technologies and Comunications project "Zonas Wifi Gratis Para la Gente" (Free Wifi Zones for People) seeks to connect people and to offer a space to take advantage of what Internet has to offer, like business or education oportunities.
+Colombian Ministry of Information Technologies and Communications project "Zonas Wifi Gratis Para la Gente" (Free Wifi Zones for People) seeks to connect people and to offer a space to take advantage of what Internet has to offer, like business or education opportunities.
 
-The data of this visualization was published in july 2018 by the colombian [Ministry of Information Technologies and Comunications](https://www.mintic.gov.co) (MinTIC) in the open data web pages www.datos.gov.co
+The data of this visualization was published in july 2018 by the colombian [Ministry of Information Technologies and Communications](https://www.mintic.gov.co) (MinTIC) in the open data web pages www.datos.gov.co
 
 ## Objective
 To generate an interactive visualization to present and summarize the distribution of MINTIC's free wifi zones in colombian departments and municipalities.
@@ -33,7 +33,7 @@ Attributes:
 ## Why
 * Summarize the distribution of the free wifi zones in the Colombian departments. **(Summarize - Distribution)**
 * Identify the places with the higher number of free wifi zones. **(Identify - Outliers)**
-* Explore trough the places to identify the number of free wifi zones by place. **(Explore - Features)**
+* Explore through the places to identify the number of free wifi zones by place. **(Explore - Features)**
 
 ## How
 * Encode:
@@ -58,4 +58,4 @@ Attributes:
 
 # Credits
 * This content is published with 2018 MIT licence by [Manuel Alvarado](http://www.manalco.co).
-* Data by colombian [Ministry of Information Technologies and Comunications](https://www.mintic.gov.co/) available at https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Zonas-WiFi-Gratis-Para-la-Gente-DPTIC-Nacional/az23-fuws
+* Data by colombian [Ministry of Information Technologies and Communications](https://www.mintic.gov.co/) available at https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Zonas-WiFi-Gratis-Para-la-Gente-DPTIC-Nacional/az23-fuws
